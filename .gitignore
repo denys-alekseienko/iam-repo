@@ -1,1 +1,33 @@
+# --- Build and Temporary Files ---
+build/
+bin/
+out/
+.cache/
+
+# --- VS Code Specifics ---
+.vscode/
+*.code-workspace
+
+# --- Compilation Artifacts ---
 *.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.exp
+
+# --- Libraries and Third-party ---
+# We keep source files for now, but strictly ignore binaries
+# DLL and LIB files from third-party deps (like llama.cpp) stay local
+third_party/**/*.dll
+third_party/**/*.lib
+
+# --- AI Models (Large Files) ---
+# Models are too heavy for GitHub; download them separately
+*.gguf
+models/
+
+# --- Logs and Local Configs ---
+*.log
+*.user
+.DS_Store
