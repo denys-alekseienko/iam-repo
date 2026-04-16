@@ -18,13 +18,16 @@ The system is built with a modular, engine-based architecture:
 - [x] **Math Engine (`iam/math_engine`):** Custom C++ implementation of linear algebra (dot products, magnitudes, matrix operations) for handling embeddings.
 - [x] **Sorting Engine:** Custom high-performance Merge Sort implementation for efficient data organization.
 - [x] **Search Engine (`iam/search_engine`):** Efficient O(log n) retrieval using Binary Search over sorted memory keys.
-- [ ] **LLM Integration:** Implementing `llama.cpp` for local, private inference.
+- [x] **CMakeLists.txt (`iam/CMakeLists.txt`):** The Configuration of my project
+- [x] **LLM Integration:** Implementing `llama.cpp` for local, private inference.
+- [ ] **Tokenizer Integration:** Integrate the tokenizer logic into IAM.
 - [ ] **Temporal Awareness:** Logic for tracking significant life milestones and dates.
 - [ ] **Moral Core:** An ethical framework integrated into the AI's decision-making process to ensure human-centric values.
 
 * `iam/math_engine`: Low-level linear algebra routines for handling high-dimensional vectors.
 * `iam/sorting_engine`: Optimized sorting algorithms for large-scale data management.
 * `iam/search_engine`: The "Retriever" component. Implements efficient binary search algorithms to access stored personality data with O(log n) complexity.
+* `iam/CMakeLists.txt`: Build system configuration.
 
 ## 📜 Principles
 
