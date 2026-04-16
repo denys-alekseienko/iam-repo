@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <iam\math_engine\matrix.h>
+#include <matrix.h>
 using namespace std;
 
 class MathEngineInterface {

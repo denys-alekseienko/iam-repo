@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include <iam/search_engine/search_engine.h>
+#include "search_engine.h"
 using namespace std;
 
 
 Search_Engine::Search_Engine(vector<int> keys, vector<vector<double>> memory_matrix) {
     this->keys = move(keys);
-        this->memory_matrix = move(memory_matrix);
-    }
+    this->memory_matrix = move(memory_matrix);
+}
 
 vector<double> Search_Engine::binarySearch(int target) {
     int left = 0;

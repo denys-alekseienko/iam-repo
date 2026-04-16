@@ -27,6 +27,15 @@ file(GLOB_RECURSE IAM_SOURCES
 
 add_executable(iam_app ${IAM_SOURCES})
 
+target_include_directories(iam_app PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/math_engine
+    ${CMAKE_CURRENT_SOURCE_DIR}/search_engine
+    ${CMAKE_CURRENT_SOURCE_DIR}/sorting_engine
+    iam/math_engine
+    iam/search_engine
+    iam/sorting_engine
+)
+
 target_link_libraries(iam_app PRIVATE 
     "C:/Projects/llama.cpp/build-x64-windows-msvc-release/src/llama.lib"
 )
