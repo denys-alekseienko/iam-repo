@@ -1,31 +1,30 @@
 # IAM (I AM) — Digital Legacy Guardian
 
-**IAM** is a high-performance personal AI companion system designed to preserve human experience, thoughts, and knowledge as a digital legacy. Built with a focus on privacy, raw performance, and moral integrity.
+**IAM** is a high-performance, local AI companion designed to capture and preserve human experience. It functions as a digital legacy, allowing thoughts and knowledge to be passed down through generations.
 
-## 🚀 Project Overview
-
-The mission of **IAM** is to create a digital reflection of personality that transcends time. It is not merely a tool; it is a guardian of your life's path, designed to pass your wisdom and consciousness to future generations.
+## 🚀 Vision & Mission
+"I will live even when I am no longer physically here." 
+IAM is built to be a moral and intellectual reflection of its user. It’s not just an assistant; it’s a guardian of your path, decisions, and wisdom.
 
 ### Tech Stack:
-* **Backend:** C++ (Core Engine, `llama.cpp` integration)
-* **Frontend:** C# (WPF for a sleek, native Windows interface)
-* **AI/ML:** Python (Prototyping and RAG logic)
-* **Key Technologies:** Linear Algebra (Vector Math), Retrieval-Augmented Generation (RAG), Temporal Awareness.
+* **Core Engine:** Native C++ (Focusing on high-performance memory management and local inference).
+* **Interface:** C# / WPF (Modern, robust Windows desktop experience).
+* **AI Architecture:** RAG (Retrieval-Augmented Generation) & Temporal Awareness.
+* **Math Foundation:** Linear Algebra from scratch for vector processing.
 
-## 🛠 Current Progress
+## 🏗 Project Structure & Current Progress
+The system is built with a modular, engine-based architecture:
 
-- [x] **Core Math Engine:** Native C++ implementation of vector and matrix operations for embedding processing.
+- [x] **Math Engine (`iam/math_engine`):** Custom C++ implementation of linear algebra (dot products, magnitudes, matrix operations) for handling embeddings.
 - [x] **Sorting Engine:** Custom high-performance Merge Sort implementation for efficient data organization.
-- [ ] **RAG Integration:** Context-aware retrieval system for personalized and accurate responses.
-- [ ] **Temporal Awareness:** Advanced logic for tracking and remembering significant dates and life milestones.
+- [x] **Search Engine (`iam/search_engine`):** Efficient O(log n) retrieval using Binary Search over sorted memory keys.
+- [ ] **LLM Integration:** Implementing `llama.cpp` for local, private inference.
+- [ ] **Temporal Awareness:** Logic for tracking significant life milestones and dates.
 - [ ] **Moral Core:** An ethical framework integrated into the AI's decision-making process to ensure human-centric values.
 
-## 🏗 Architecture
-
-The project is designed with a modular engine-based architecture:
 * `iam/math_engine`: Low-level linear algebra routines for handling high-dimensional vectors.
 * `iam/sorting_engine`: Optimized sorting algorithms for large-scale data management.
-* `iam/ui`: Modern desktop experience built on the C#/.NET ecosystem.
+* `iam/search_engine`: The "Retriever" component. Implements efficient binary search algorithms to access stored personality data with O(log n) complexity.
 
 ## 📜 Principles
 
