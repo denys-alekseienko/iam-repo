@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <iam/sorting_engine/sorting_engine.h>
+#include <sorting_engine.h>
 using namespace std;
 
 void MergeSort::mergeSort(vector<int>& nums, int left, int right) {

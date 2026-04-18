@@ -7,7 +7,7 @@ class Search_Engine_Interface {
         virtual ~Search_Engine_Interface() {}
 };
 
-class Search_Engine : Search_Engine_Interface {
+class Search_Engine : public Search_Engine_Interface {
     private:
         vector<int> keys;
         vector<vector<double>> memory_matrix;

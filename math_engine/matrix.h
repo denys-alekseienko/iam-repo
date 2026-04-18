@@ -18,4 +18,10 @@ class Matrix {
         const vector<double>& getData() const {
             return data;
         }
+        void setValue(int r, int c, double value) {
+            if (r >= rows || c >= columns) {
+                throw std::out_of_range("Matrix indices out of bounds");
+            }
+            data[r * columns + c] = value;
+        }
 };

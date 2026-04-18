@@ -22,6 +22,8 @@ file(GLOB_RECURSE IAM_SOURCES
     "search_engine/*.h"
     "sorting_engine/*.cpp"
     "sorting_engine/*.h"
+    "ai_engine/*.cpp"
+    "ai_engine/*.h"
     "main.cpp"
 )
 
@@ -34,6 +36,7 @@ target_include_directories(iam_app PRIVATE
     iam/math_engine
     iam/search_engine
     iam/sorting_engine
+    iam/ai_engine
 )
 
 target_link_libraries(iam_app PRIVATE 
